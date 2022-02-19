@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Blog</title>
+</head>
+<body>
+
+	<div class="header" id="myHeader">
+ <!-- Header  -->
+	<header class="hd">
+			<div class="hd-lf">
+				<form action="#">
+      
+      <button type="submit"><i class="fa fa-search"></i></button>
+      <input type="text" placeholder="Search.." name="search" id="search">
+    </form>
+				
+			</div>
+			<div class="hd-rt">
+				<ul>
+					<li><a href="#"><img src="images\fb.png" alt="fb" /></a></li>
+					<li><a href="#"><img src="images\insta.png" alt="insta" /></a></li>
+					<li><a href="#"><img src="images\twitter.png" alt="twitter" /></a></li>
+					<li><a href="#"><img src="images\pin.png" alt="pinterest" /></a></li>
+				</ul>
+			</div>
+		</header>
+
+ <!-- Menus -->
+ 	<section class="menus-sec">
+ 		<div class="ms-lf">
+ 			<h3>Turning Heads</h3>
+ 		</div>
+ 		<div class="ms-rt">
+ 			<ul>
+ 			<li><a href="index.html"><b>Home</b></a></li>
+ 			<li><a href="blog.html"><b>MyBlog</b></a></li>
+ 			<li><a href="about.html"><b>About</b></a></li>
+ 			<li><a href="#conta"><b>Contact</b></a></li>
+ 			</ul>
+ 		</div>
+ 	</section>
+</div>
+
+
+<section class="creat-con">
+	<div class="creat-design">
+<h1>Transform your winter blues into winter creativity</h1>
+<p>Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading.</p>
+<img src="images/creat_post.jpg">
+<p>Welcome to your blog post. Use this space to connect with your readers and potential customers in a way that’s current and interesting. Think of it as an ongoing conversation where you can share updates about business, trends, news, and more. </p>
+<h4>Design with Ease</h4>
+<blockquote>“Do you have a design in mind for your blog? Whether you prefer a trendy postcard look or you’re going for a more editorial style blog - there’s a stunning layout for everyone.” </blockquote>
+<p>Every layout comes with the latest social features built in. Readers will be able to easily share posts on social networks like Facebook and Twitter, view how many people have liked a post, made comments and more. With Wix, building your online community has never been easier.</p>
+<h4>Create Relevant Content</h4>
+<p>You’ll be posting loads of engaging content, so be sure to keep your blog organized with Categories that also allow readers to explore more of what interests them. Each category of your blog has its own page that’s fully customizable. Add a catchy title, a brief description and a beautiful image to the category page header to truly make it your own. You can also add tags (#vacation #dream #summer) throughout your posts to reach more people, and help readers search for relevant content. Using hashtags can expand your post reach and help people find the content that matters to them. Go ahead, #hashtag away.</p>
+<h4>Stun Your Readers </h4>
+<blockquote>“Be original, show off your style, and tell your story.”</blockquote>
+<p>Blogging gives your site a voice, so let your business’ personality shine through. Are you a creative agency? Go wild with original blog posts about recent projects, cool inspirational ideas, or what your company culture is like. Add images, and videos to really spice it up, and pepper it with slang to keep readers interested. Are you a programmer? Stay on the more technical side by offering weekly tips, tricks, and hacks that show off your knowledge of the industry. No matter what type of business you have, one thing is for sure - blogging gives your business the opportunity to be heard in a way in a different and unconventional way.  </p>
+<h4>Get Inspired</h4>
+<p>To keep up with all things Wix, including website building tips and interesting articles, head over to the Wix Blog. You may even find yourself inspired to start crafting your own blog, adding unique content, and stunning images and videos. Start creating your own blog now. Good luck!</p>
+</div>
+</section>
+
+
+
+<div>
+	<img src="images/authorimage.jpg">
+</div>
+<div>
+	<h4>Hi, thanks for stopping by!</h4>
+	<p>I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+</div>
+<div>
+	<a href="about.html"><button id="myBtn">Read more</button></a>
+</div>
+
+<div class="con-com-rt-h1">
+					<h1>Let the post come to you</h1>
+
+					<div class="sec-email">
+						<form>
+							<label for="email" id="l1">Email *</label><br />
+							<input type="email" name="emails" id="e1"><br />
+							<button id="sub-bt">Subscribe</button><br />
+						</form>
+					</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Let me know -->
+<div id="conta">
+<div class="leme">
+	<h1>Let me know what's on your mind</h1>
+	<form>
+		<div class="leme-com">
+		<div class="leme-lf">
+		<label>First Name</label><br/>
+		<input type="text" name="firstname"><br/>
+		<label>Email *</label><br/>
+		<input type="text" name="email"><br/>
+		</div>
+		<div class="leme-rt">
+		<label>Last Name</label><br/>
+		<input type="text" name="lastname"><br/>
+		<label>Leave us a message</label><br/>
+		<input type="text" name="message"><br/>
+		</div>
+		</div>
+		<button id="bu">Submit</button>
+	</form>
+</div>
+
+
+<!-- Footer -->
+<footer class="fot">
+	<p>Copyright © 2022 by Turning Heads. Proudly created with wix</p>
+</footer>
+</div>
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+<script type="text/javascript">
+	function truncateText(selector, maxLength) {
+    var element = document.getElementById(selector),
+        truncated = element.innerText;
+
+    if (truncated.length > maxLength) {
+        truncated = truncated.substr(0,maxLength) + '...';
+    }
+    return truncated;
+}
+
+document.getElementById('txt').innerText = truncateText('txt', 107);
+document.getElementById('txt1').innerText = truncateText('txt1', 107);
+document.getElementById('txt2').innerText = truncateText('txt2', 107);
+document.getElementById('txt3').innerText = truncateText('txt3', 107);
+document.getElementById('txt4').innerText = truncateText('txt4', 107);
+document.getElementById('txt5').innerText = truncateText('txt5', 107);
+document.getElementById('txt6').innerText = truncateText('txt6', 107);
+document.getElementById('txt7').innerText = truncateText('txt7', 107);
+document.getElementById('txt8').innerText = truncateText('txt8', 107);
+</script>
+
+
+
+
+
+
+</body>
+</html>

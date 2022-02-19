@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>About</title>
+</head>
+<body>
+<div class="header" id="myHeader">
+ <!-- Header  -->
+	<header class="hd">
+			<div class="hd-lf">
+				<form action="#">
+      
+      <button type="submit"><i class="fa fa-search"></i></button>
+      <input type="text" placeholder="Search.." name="search" id="search">
+    </form>
+				
+			</div>
+			<div class="hd-rt">
+				<ul>
+					<li><a href="#"><img src="images\fb.png" alt="fb" /></a></li>
+					<li><a href="#"><img src="images\insta.png" alt="insta" /></a></li>
+					<li><a href="#"><img src="images\twitter.png" alt="twitter" /></a></li>
+					<li><a href="#"><img src="images\pin.png" alt="pinterest" /></a></li>
+				</ul>
+			</div>
+		</header>
+
+ <!-- Menus -->
+ 	<section class="menus-sec">
+ 		<div class="ms-lf">
+ 			<h3>Turning Heads</h3>
+ 		</div>
+ 		<div class="ms-rt">
+ 			<ul>
+ 			<li><a href="index.html"><b>Home</b></a></li>
+ 			<li><a href="blog.html"><b>MyBlog</b></a></li>
+ 			<li><a href="about.html"><b>About</b></a></li>
+ 			<li><a href="#conta"><b>Contact</b></a></li>
+ 			</ul>
+ 		</div>
+ 	</section>
+</div>
+
+<!-- Main content -->
+<div class="cont">
+<div class="text-sty">
+	<h1>Meet the face behind the posts</h1>
+	<p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you. <br/>This is a great space to write a long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. Make your company stand out and show your visitors who you are.</p>
+</div>
+<div class="text-img">
+	<img src="images/person.jpg" class="target">
+</div>
+</div>
+
+
+
+<!-- Let me know -->
+<div id="conta">
+<div class="leme">
+	<h1>Let me know what's on your mind</h1>
+	<form>
+		<div class="leme-com">
+		<div class="leme-lf">
+		<label>First Name</label><br/>
+		<input type="text" name="firstname"><br/>
+		<label>Email *</label><br/>
+		<input type="text" name="email"><br/>
+		</div>
+		<div class="leme-rt">
+		<label>Last Name</label><br/>
+		<input type="text" name="lastname"><br/>
+		<label>Leave us a message</label><br/>
+		<input type="text" name="message"><br/>
+		</div>
+		</div>
+		<button id="bu">Submit</button>
+	</form>
+</div>
+
+
+<!-- Footer -->
+<footer class="fot">
+	<p>Copyright © 2022 by Turning Heads. Proudly created with wix</p>
+</footer>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>
